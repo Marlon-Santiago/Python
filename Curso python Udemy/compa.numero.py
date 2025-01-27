@@ -7,6 +7,9 @@ if valor1 > valor2:
 elif valor2 > valor1:
     print(f'O segundo valor {valor2} é maior que o primeiro valor {valor1}')
 
+else:
+    print(f'Os valores são iguais')
+
 
 numero1 = input('Digite um número: ')
 numero2 = input('Digite outro numero: ')
