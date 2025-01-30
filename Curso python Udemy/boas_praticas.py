@@ -2,6 +2,8 @@
 CONSTANTES = Variaveis que não vao mudar e sempre colocalas em maiusculo
 muitas consiçoes no mesmo if (RUIM)
     <--- Contagem de complexidade (RUiM)
+
+Foi feito um codigo para saber a velocidade em que o carro passa no radar e se ele vai ser multado ou não
 '''
 
 velocidade = int(input('Digite a sua velocidade: ')) # velocidade do carro e variavel não constante
@@ -15,7 +17,7 @@ FORA_DO_RADAR = 2
 passou_acima_da_velocidade_no_radar1 = velocidade > RADAR_1
 passou_na_velocidade_permitida_no_radar1 = velocidade <= RADAR_1
 carro_passou_na_area_do_radar = local_carro >= LOCAL_1 - RADAR_RANGE or local_carro <= LOCAL_1 + RADAR_RANGE
-carro_nao_passou_na_area_do_radar = local_carro >= LOCAL_1 - FORA_DO_RADAR or local_carro <= LOCAL_1 + FORA_DO_RADAR
+
 
 if passou_acima_da_velocidade_no_radar1 and carro_passou_na_area_do_radar:
     print('O carro passou acima da velocidade permitida no radar 1 e foi multado')
