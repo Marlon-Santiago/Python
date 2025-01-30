@@ -5,19 +5,20 @@ muitas consiçoes no mesmo if (RUIM)
 '''
 
 velocidade = int(input('Digite a sua velocidade: ')) # velocidade do carro e variavel não constante
-local_carro = int(input('ESCOLHA O LOCAL DO CARRO ENTRE 99, 100 E 101')) # Local aonde o carro se encontra e variavel não constante
+local_carro = int(input('ESCOLHA O LOCAL DO CARRO ENTRE 99 e 101: ')) # Local aonde o carro se encontra e variavel não constante
 
 RADAR_1 = 60 # VELOCIDADE MAXIMA DO RADAR 1 E VARIAVEL CONSTANTE
 LOCAL_1 = 100 # LOCAL AONDE O RADAR ESTAR E VARIAVEL CONSTANTE
 RADAR_RANGE = 1 # A DISTANCIA QUE O RADAR PEGA E VARIAVEL CONSTANTE
+FORA_DO_RADAR = 2
 
+passou_acima_da_velocidade_no_radar1 = velocidade > RADAR_1
+passou_na_velocidade_permitida_no_radar1 = velocidade <= RADAR_1
+carro_passou_na_area_do_radar = local_carro >= LOCAL_1 - RADAR_RANGE or local_carro <= LOCAL_1 + RADAR_RANGE
+carro_nao_passou_na_area_do_radar = local_carro >= LOCAL_1 - FORA_DO_RADAR or local_carro <= LOCAL_1 + FORA_DO_RADAR
 
-if velocidade > RADAR_1 and local_carro >= LOCAL_1 + 1:
-    print('Você passou pelo radar 1 acima da velocidade permitida')
+if passou_acima_da_velocidade_no_radar1 and carro_passou_na_area_do_radar:
+    print('O carro passou acima da velocidade permitida no radar 1 e foi multado')
 
-elif velocidade <= RADAR_1 and local_carro >= LOCAL_1:
-    print('Você passou na valecidade permitida pelo radar 1')
-
-else:
-    local_carro <= LOCAL_1
-    print('Ainda não passou pelo radar 1')
+elif passou_na_velocidade_permitida_no_radar1 and carro_passou_na_area_do_radar:
+    print('O carro passou a 60 km/h ou abaixo velocidade permitida')
