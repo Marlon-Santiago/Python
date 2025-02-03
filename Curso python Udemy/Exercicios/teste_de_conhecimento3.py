@@ -4,6 +4,7 @@ descrito, exiba a saudação apropriada. Ex.
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 
 """
+
 hora = input('Digite que horas: ')
 minutos = input('Digite os minutos: ')
 segundos = input('Digie os segundos: ')
@@ -21,6 +22,9 @@ if hora.isdigit() and minutos.isdigit() and minutos.isdigit():
     
     elif hora > 17 and hora <= 23:
         print(f'Bom Noite !!!!!, São {hora}:{minutos}:{segundos}')
+
+    elif hora > 23 or minutos > 59 or segundos > 59:
+        print('O dia tem 24 horas os minutos vão ate 59 assim como os segundos digite os numeros dentro desses valores')
 
 else:
     print('Você não digitou um número válido')
