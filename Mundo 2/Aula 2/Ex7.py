@@ -7,8 +7,8 @@ for c in range(1, num+1):
         primo += 1
 
 if primo == 2:
-    print('Esse numero é primo')
+    print(f'O numero {num} foi dividido {primo} vezes por isso ele é primo')
 
 else:
-    print('não primo')
+    print(f'O numero {num} foi dividido {primo} vezes por isso ele não é primo')
         
