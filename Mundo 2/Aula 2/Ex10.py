@@ -29,6 +29,9 @@ for i in range(1, 5):
         if idade > maioridade:
             maioridade = idade
             homemmaisvelho = pessoa
+
+ # Verifica se o sexo é válido
+
     if not  (sexo, 'M', 'F'):
         print('Sexo inválido! Digite M ou F.')
     
@@ -40,5 +43,6 @@ print('----- RESULTADOS -----')
 print(f'a media de idade é {mediaidade / 4} anos')    
 print(f'O homem mais velho é {homemmaisvelho} com {maioridade} anos')
 print(f'Ao todo, temos {contidade} mulheres com menos de 20 anos')
-            
 
+# Fim do programa
+print('----- FIM DO PROGRAMA -----')
