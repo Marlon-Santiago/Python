@@ -9,6 +9,7 @@ while n != 0:
     print('Fim do programa') 
 
 '''
+'''
 n = 1
 pa = impar = 0
 
@@ -24,3 +25,18 @@ while n != 0:
             impar += 1
 
 print(f'Você digitou {pa} números pares e {impar} números ímpares.')
+# Fim do programa
+print('Fim do programa')
+
+'''
+
+while True:
+    nome = input('digite o nome de quem criou esse programa: ').capitalize()
+
+    if nome != 'Marlon':
+        print('Você errou')
+
+    else:
+        print('parabens')
+        break
+
