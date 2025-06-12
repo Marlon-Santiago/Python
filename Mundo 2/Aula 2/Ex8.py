@@ -16,5 +16,5 @@ if frase == nova_frase:
     print(f'{nova_frase} é Palidromo')
 
 else:
-    print(f'{nova_frase} não é um PAlindromo')
+    print(f'{nova_frase} não é um Palindromo')
 
