@@ -12,7 +12,4 @@ while len(fibonacci) < termos:
     fibonacci.append(proximo_termo)
 
 print('Sequencia de Fibonacci: ')
-print(fibonacci) # Exibe a sequência de Fibonacci até o número de termos solicitado  
-
-'''Exemplo de uso:
- '''
+print(fibonacci) # Exibe a sequência de Fibonacci até o número de termos solicitado
