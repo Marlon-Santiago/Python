@@ -13,7 +13,7 @@ while flag != 999:
     contador += 1
     flag = int(input('Digite um número (999 para parar): '))
 
-print(f'Foram digitados {contador} e a soma é {total}')
+print(f'Foram digitados {contador - 1} e a soma é {total}')
 
 '''
 while True:
